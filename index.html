@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+<style>
+	td {
+		font-family: 'Impact';
+		font-size: 50px;
+		color: #6d1253;
+		text-align: center;
+	}
+	h1 {
+		font-family: 'Cooper Black';
+		font-size: 45px;
+		color: #6d1253;
+		text-align: center;
+	}
+	h2 {
+		font-family: 'Cooper Black';
+		font-size: 35px;
+		color: #b30280;
+		text-align: center;
+	}
+	body{
+		background:linear-gradient(to right,#f006b5,#dc05a3,#f006b5);
+	}     
+</style>
+
+<body>
+
+	<script>
+		var articulo = prompt("Nombre del articulo");
+		var precio = prompt("Precio: ");
+		var cantidad = prompt("Cantidad: ");
+
+		subtotal = precio * cantidad;
+
+		document.write("<center>")
+		document.write("<h1>El subtotal de los articulos es por: " + subtotal + " de " + cantidad + " " + articulo + "<h1>")
+
+		if (cantidad >= 10) {
+
+			subtotal = subtotal - subtotal * 0.2;
+
+		}
+		document.write("<br> Aplicando descuento del 20% por llevar mas de 10 articulos = " + subtotal)
+
+		document.write(
+			"<br>"
+			+ "<br>"+"<center>"
+			+ "<table border='5'"
+
+			+ "<tr>"
+			+ "<td>" + "ARTICULO: " + "</td>"
+			+ "<td>" + "CANTIDAD: " + "</td>"
+			+ "<td>" + "TOTAL: " + "</td>"
+			+ "</tr>"
+			+ "<tr>"
+			+ "<td>" + "<center>" + articulo + "</center>" + "</td>"
+			+ "<td>" + "<center>" + cantidad + "</center>" + "</td>"
+			+ "<td>" + "<center>" + subtotal + "</center>" + "</td>"
+			+ "</tr>"
+
+			+ "</table>")
+
+			document.write("<h2><mark>Castro Moreno Javier Vladimir</mark><h2>")
+
+	</script>
+
+</body>
+
+</html>
